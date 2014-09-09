@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src ="carousel.js"></script>
+
+    <style type="texr/css" rel="stylesheet" href="reset.css"> </style>
+    <style>
+        html,body{
+          margin : 0;
+          padding : 0;
+            background-color: mintcream;
+        }
+
+        input{
+          display:block;
+          font: 1.5em "Calibri";
+          margin : 1em auto;
+        }
+
+        div.main_container{
+         margin : 0 auto;
+         width: 34.3em;
+        }
+
+       div.slider{
+           height : 30em;
+           width : 30em;
+           float:left;
+           overflow : hidden;
+        }
+
+        ul.slider_container{
+          display : table;
+          height : 30em;
+          width : 90em;
+          margin : 0;
+          padding : 0;
+          list-style-type : none;
+
+        }
+
+        li.slide:nth-child(odd){
+         background-color : lightgrey;
+        }
+
+         li.slide{
+         display: table-cell;
+         text-align: center;
+         height: 30em;
+         width: 30em;
+         float: left;
+        }
+
+        div.move{
+           display : table;
+           float : left;
+           width : 2em;
+           height : 30em;
+        }
+
+        img{
+            width: 30em;
+            height: 30em;
+        }
+        span.arrow{
+           display: table-cell;
+           text-align : center;
+           vertical-align: middle;
+           font: 2.5em "Helvetica Nueue";
+
+        }
+       span.arrow:hover {
+        cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="main_container">
+    <div class="move">
+        <span class="arrow">
+            <span id="arrow_left">&laquo;</span>
+        </span>
+    </div>
+
+    <div class="slider">
+         <ul class="slider_container">
+             <li class="slide"><img src="http://upload.wikimedia.org/wikipedia/commons/a/a4/Ggb_by_night.jpg" ></li>
+             <li class="slide"><img src="http://www.tluxp.com/bre/uploads/properties/910NINETEEN/original/1970PierNight.jpg"></li>
+             <li class="slide"><img src="http://ppcdn.500px.org/7758537/feda2bc4cba68ed2401b84081a379cb588f7fe3a/5.jpg"></li>
+         </ul>
+    </div>
+
+    <div class="move">
+          <span class="arrow">
+              <span id="arrow_right">&raquo;</span>
+          </span>
+    </div>
+</div>
+</body>
+</html>
